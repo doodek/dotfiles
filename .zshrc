@@ -112,4 +112,13 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+## PUBLIC ALIASES
 alias config='/usr/bin/git --git-dir=/home/bart/repos/dotfiles/ --work-tree=/home/bart'
+
+## PRIVATE ALIASES FILE
+ALIASES_FILE="$HOME/.aliases"
+if test -f "$ALIASES_FILE"; then
+    source "$ALIASES_FILE"
+fi
+    
