@@ -115,4 +115,4 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 alias config='/usr/bin/git --git-dir=/home/bart/repos/dotfiles/ --work-tree=/home/bart'
 
 [[ ! -f ~/.aliases.zsh ]] || source ~/.aliases.zsh
-
+[[ ! -f ~/.aliases_local.zsh ]] || source ~/.aliases_local.zsh
